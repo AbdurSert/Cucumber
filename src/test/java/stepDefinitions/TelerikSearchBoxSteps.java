@@ -50,9 +50,7 @@ public class TelerikSearchBoxSteps {
 
         String actuallTextOfSearch1 = aranacakKelimeler.substring(0, aranacakKelimeler.indexOf(" ")-1);
         String actuallTextOfSearch2 = aranacakKelimeler.substring(aranacakKelimeler.indexOf(" ") + 1, aranacakKelimeler.length()-1);
-        System.out.println(aranacakKelimeler);
         String expectedTextOfSearch = telerikSearchBoxPage.firstResultOfSearch.getText().toLowerCase();
-        System.out.println(expectedTextOfSearch);
 
         Assert.assertTrue(expectedTextOfSearch.contains(actuallTextOfSearch1));
         Assert.assertTrue(expectedTextOfSearch.contains(actuallTextOfSearch1));
