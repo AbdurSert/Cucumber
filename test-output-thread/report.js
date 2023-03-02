@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"5b07aaad-c0ff-499e-9206-f7d4d0f44d5c","feature":"Kullanici arama kutucuguna kelime yazip aratir","scenario":"Kullanici farkli kelimler ile arama yapar.","start":1677775961564,"group":1,"content":"","tags":"@teleriksearchbox,","end":1677775977568,"className":"passed"},{"id":"10929d6d-26f1-4fd2-8657-3e0d39c4cbda","feature":"Kullanici arama kutucuguna kelime yazip aratir","scenario":"Kullanici farkli kelimler ile arama yapar.","start":1677775943697,"group":1,"content":"","tags":"@teleriksearchbox,","end":1677775961553,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"d0c4ed85-efb9-4a56-9f6c-a2fb00ff9db1","feature":"Kullanici anasayfada searchBox kutusuna computer yazip Win10 ciktisi alir","scenario":"Ebay serachBox a veri gonderilip dogrulugu teyit edilir","start":1677777659683,"group":1,"content":"","tags":"@ebaysearchbox,","end":1677777679603,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });

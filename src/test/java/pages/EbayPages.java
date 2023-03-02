@@ -20,11 +20,10 @@ public class EbayPages {
     @FindBy(id = "gh-btn")
     public WebElement findButton;
 
-    @FindBy(xpath = "(//font[text()='windows 10'])[2]")
+    @FindBy(xpath = "/html/body/div[8]/div[4]/div[2]/div[1]/div[2]/ul/li[1]/div/div/div/div/div/ul/li[1]/div/a")
     public WebElement win10Button;
 
-    @FindBy(xpath = "//font[text()='HP 800 G1 Computer SFF PC Intel 4th Gen 4-32GB 250-1000GB SSD&HDD Windows 10 PRO']")
+    @FindBy(xpath = "(//div[@class='s-item__title'])[2]")
     public WebElement win10UrunOzellik;
-
 
 }

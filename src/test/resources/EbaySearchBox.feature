@@ -1,13 +1,11 @@
 Feature: Kullanici anasayfada searchBox kutusuna computer yazip Win10 ciktisi alir
 
-  Background:
-    Given Kullanici ebay ana sayfayasina gider
 
+    @ebaySearchBox
 
-    @searchBox
+    Scenario: Ebay searchBox a veri gonderilip dogrulugu teyit edilir
 
-    Scenario: r1
-
+      Given Kullanici ebay ana sayfayasina gider
       When Kullanici butun cookiesleri kabul eder
       And Kullanici searchBox a computer yazar
       And KUllanici arama butonuna basar

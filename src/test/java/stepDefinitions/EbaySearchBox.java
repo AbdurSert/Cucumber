@@ -33,40 +33,35 @@ public class EbaySearchBox {
     @When("Kullanici butun cookiesleri kabul eder")
     public void kullanici_butun_cookiesleri_kabul_eder() {
 
-        WebElement abc = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("gdpr-banner-accept")));
-        action.click(abc).perform();
-
+        WebElement cookie = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("gdpr-banner-accept")));
+        action.click(cookie).perform();
     }
 
     @And("Kullanici searchBox a computer yazar")
     public void kullanici_search_box_a_computer_yazar() {
 
        action.click(ebayPages.searchBox).sendKeys("computer").perform();
-
     }
 
     @And("KUllanici arama butonuna basar")
     public void k_ullanici_arama_butonuna_basar() {
 
         action.click(ebayPages.findButton).perform();
-
     }
 
     @And("Kullanici Win10 secenegine tiklar")
     public void kullanici_win10_secenegine_tiklar() {
 
-        action.click(ebayPages.win10Button).perform();
-
+       ebayPages.win10Button.click();
     }
 
     @Then("Kullanici ilk cikan urunde win10 ozelligi oldugunu dogrular ve kapatir")
     public void kullanici_ilk_cikan_urunde_win10_ozelligi_oldugunu_dogrular_ve_kapatir() {
 
         String actualtextwin10 = ebayPages.win10UrunOzellik.getText();
-        String expectedtextwin10 = "Win 10";
+        String expectedtextwin10 = "Win10";
         Assert.assertTrue(actualtextwin10.contains(expectedtextwin10));
 
         Driver.closeDriver();
-
     }
 }
