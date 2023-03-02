@@ -48,12 +48,15 @@ public class TelerikSearchBoxSteps {
     @Then("Arama sonucu çıkan ilk seçeneğin ilgili {string} barındırdığı Assert edilir.")
     public void arama_sonucu_çıkan_ilk_seçeneğin_ilgili_barındırdığı_assert_edilir(String aranacakKelimeler) {
 
-        String actuallTextOfSearch = aranacakKelimeler;
+        String actuallTextOfSearch1 = aranacakKelimeler.substring(0, aranacakKelimeler.indexOf(" ")-1);
+        String actuallTextOfSearch2 = aranacakKelimeler.substring(aranacakKelimeler.indexOf(" ") + 1, aranacakKelimeler.length()-1);
         System.out.println(aranacakKelimeler);
         String expectedTextOfSearch = telerikSearchBoxPage.firstResultOfSearch.getText().toLowerCase();
         System.out.println(expectedTextOfSearch);
 
-        Assert.assertTrue(expectedTextOfSearch.contains(actuallTextOfSearch));
+        Assert.assertTrue(expectedTextOfSearch.contains(actuallTextOfSearch1));
+        Assert.assertTrue(expectedTextOfSearch.contains(actuallTextOfSearch1));
+
 
     }
 

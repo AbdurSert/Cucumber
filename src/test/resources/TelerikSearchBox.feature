@@ -16,5 +16,5 @@ Feature: Kullanici arama kutucuguna kelime yazip aratir
 
     Examples:
     |aranacakKelimeler|
-    |keyword |
-    |data    |
+    |keyword test     |
+    |data testing     |

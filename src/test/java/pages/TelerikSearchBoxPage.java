@@ -23,7 +23,7 @@ public class TelerikSearchBoxPage {
     @FindBy(css = "button[class='TK-Tag-Input-Button']")
     public WebElement searchButton;
 
-    @FindBy(xpath = "(//p[@class='TK-Search-Results-List-Item-P'])[1]")
+    @FindBy(xpath = "(//h4[@class='TK-Search-Results-List-Item-H'])[1]")
     public WebElement firstResultOfSearch;
 
 
