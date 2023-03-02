@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"851ec533-a508-4729-9231-b2c4fdca10a9","feature":"Kullanici urunleri sepete atar ve cikis yapar","scenario":"Kullaici birkac urunu sepete ekler ve urun sayilari sepette artar","start":1677759289860,"group":1,"content":"","tags":"@checkout,","end":1677759316302,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"67f349c8-32fb-4e2a-a9e2-af504cff1e92","feature":"Kullanici arama kutucuguna kelime yazip aratir","scenario":"Kullanici farkli kelimler ile arama yapar.","start":1677769737486,"group":1,"content":"","tags":"@teleriksearchbox,","end":1677769754880,"className":"passed"},{"id":"d72f3a6b-3708-40fb-bc5a-8361ee33d62b","feature":"Kullanici arama kutucuguna kelime yazip aratir","scenario":"Kullanici farkli kelimler ile arama yapar.","start":1677769754890,"group":1,"content":"","tags":"@teleriksearchbox,","end":1677769771401,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
