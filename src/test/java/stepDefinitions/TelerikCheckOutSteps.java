@@ -20,6 +20,8 @@ public class TelerikCheckOutSteps {
 
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
 
+
+
     @Given("Kullanici ana sayfaya gider")
     public void kullanici_ana_sayfaya_gider(){
 
@@ -84,5 +86,39 @@ public class TelerikCheckOutSteps {
 
         Assert.assertTrue(ActuallQuantityOfProduct.contains(ExpectedQuantityOfProduct));
 
+    }
+
+    @And("kullanici sepete uzerindeki mevcut sayiyi alir")
+    public void kullaniciSepeteUzerindekiMevcutSayiyiAlir() {
+
+      String  amountOfProduct = page.siparisSayiCheck.getText();
+
+    }
+
+    @And("kullanici sepete tekrar gider")
+    public void kullaniciSepeteTekrarGider() {
+
+        page.checkOutIcon.click();
+
+    }
+
+    @And("kullanici sepetteki urunlerden bir tanesini Delete linki ile siler")
+    public void kullaniciSepettekiUrunlerdenBirTanesiniDeleteLinkiIleSiler() {
+
+        page.deleteButton.click();
+    }
+
+    @And("kullanici ana sayfaya geri doner")
+    public void kullaniciAnaSayfayaGeriDoner() {
+
+        page.anaSayfaLogo.click();
+    }
+
+    @Then("kullanici sepet simgesi uzerindeki sayinin bir eksildigini kontrol eder")
+    public void kullaniciSepetSimgesiUzerindekiSayininBirEksildiginiKontrolEder() {
+
+      String amountOfProductAfterDelete= page.siparisSayiCheck.getText();
+
+      Assert.assertTrue( amountOfProductAfterDelete.equals("1"));
     }
 }

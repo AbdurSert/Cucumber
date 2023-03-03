@@ -8,6 +8,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+import java.time.Duration;
+
 
 public class Hooks {
 
@@ -15,6 +17,7 @@ public class Hooks {
     public void setup() {
 
         Driver.getDriver();
+
     }
 
     @After
@@ -40,6 +43,6 @@ public class Hooks {
     @AfterStep
     public void slowRun() throws InterruptedException {
 
-        Thread.sleep(2000);
+        Thread.sleep(1500);
     }
 }

@@ -29,6 +29,14 @@ public class TelerikCheckOutPage {
     @FindBy(css = "span[class='TK-Counter TK-Counter--SC TK-Counter--Visible']")
     public WebElement siparisSayiCheck;
 
+    @FindBy(css = "a[class='TK-Aside-Menu-Link js-tlrk-nav-shopping-cart-counter-container']")
+    public WebElement checkOutIcon;
+
+    @FindBy(xpath = "(//a[@class='e2e-delete-item btn-delete-item ng-star-inserted'])[1]")
+    public WebElement deleteButton;
+
+
+
 
 
 
